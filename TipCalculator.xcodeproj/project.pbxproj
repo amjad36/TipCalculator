@@ -31,6 +31,8 @@
 		954A2D41298E3F3D00D329B9 /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D40298E3F3D00D329B9 /* LabelFactory.swift */; };
 		954A2D43298E4C8600D329B9 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D42298E4C8500D329B9 /* AmountView.swift */; };
 		954A2D45298E5F1200D329B9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D44298E5F1100D329B9 /* UIView+Extension.swift */; };
+		954A2D47298E76D500D329B9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D46298E76D500D329B9 /* HeaderView.swift */; };
+		95A99AC22993464900CDA157 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC12993464900CDA157 /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		954A2D40298E3F3D00D329B9 /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
 		954A2D42298E4C8500D329B9 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		954A2D44298E5F1100D329B9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		954A2D46298E76D500D329B9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		95A99AC12993464900CDA157 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 			children = (
 				954A2D3C298E33F500D329B9 /* Extension */,
 				954A2D3F298E3F2A00D329B9 /* Factory */,
+				95A99AC02993463700CDA157 /* Model */,
 				954A2D37298E33CD00D329B9 /* Config */,
 				954A2D2C298E242600D329B9 /* View */,
 				9521CDBC298E17B100827953 /* AppDelegate.swift */,
@@ -175,6 +180,7 @@
 				954A2D2F298E253C00D329B9 /* ResultView.swift */,
 				954A2D42298E4C8500D329B9 /* AmountView.swift */,
 				954A2D31298E255200D329B9 /* BillInputView.swift */,
+				954A2D46298E76D500D329B9 /* HeaderView.swift */,
 				954A2D33298E259100D329B9 /* TipInputView.swift */,
 				954A2D35298E25C000D329B9 /* SplitInputView.swift */,
 			);
@@ -205,6 +211,14 @@
 				954A2D40298E3F3D00D329B9 /* LabelFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		95A99AC02993463700CDA157 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95A99AC12993464900CDA157 /* Tip.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9521CDC1298E17B100827953 /* CalculatorViewController.swift in Sources */,
+				95A99AC22993464900CDA157 /* Tip.swift in Sources */,
 				954A2D2E298E249200D329B9 /* LogoView.swift in Sources */,
 				954A2D39298E33DF00D329B9 /* ThemeColor.swift in Sources */,
 				954A2D3E298E341400D329B9 /* UIColor+Extension.swift in Sources */,
@@ -363,6 +378,7 @@
 				9521CDBD298E17B100827953 /* AppDelegate.swift in Sources */,
 				954A2D45298E5F1200D329B9 /* UIView+Extension.swift in Sources */,
 				954A2D3B298E33F000D329B9 /* ThemeFont.swift in Sources */,
+				954A2D47298E76D500D329B9 /* HeaderView.swift in Sources */,
 				9521CDBF298E17B100827953 /* SceneDelegate.swift in Sources */,
 				954A2D41298E3F3D00D329B9 /* LabelFactory.swift in Sources */,
 				954A2D36298E25C000D329B9 /* SplitInputView.swift in Sources */,
