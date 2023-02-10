@@ -33,6 +33,11 @@
 		954A2D45298E5F1200D329B9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D44298E5F1100D329B9 /* UIView+Extension.swift */; };
 		954A2D47298E76D500D329B9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D46298E76D500D329B9 /* HeaderView.swift */; };
 		95A99AC22993464900CDA157 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC12993464900CDA157 /* Tip.swift */; };
+		95A99AC429936ADF00CDA157 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC329936ADF00CDA157 /* CalculatorViewModel.swift */; };
+		95A99AC629936CC100CDA157 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC529936CC100CDA157 /* Result.swift */; };
+		95A99AC829937CD300CDA157 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC729937CD300CDA157 /* String+Extension.swift */; };
+		95A99ACA29938DF900CDA157 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC929938DF900CDA157 /* UIResponder+Extension.swift */; };
+		95A99ACC2995E50300CDA157 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99ACB2995E50300CDA157 /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		954A2D44298E5F1100D329B9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		954A2D46298E76D500D329B9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		95A99AC12993464900CDA157 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		95A99AC329936ADF00CDA157 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
+		95A99AC529936CC100CDA157 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		95A99AC729937CD300CDA157 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		95A99AC929938DF900CDA157 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		95A99ACB2995E50300CDA157 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +159,7 @@
 				9521CDBC298E17B100827953 /* AppDelegate.swift */,
 				9521CDBE298E17B100827953 /* SceneDelegate.swift */,
 				9521CDC0298E17B100827953 /* CalculatorViewController.swift */,
+				95A99AC329936ADF00CDA157 /* CalculatorViewModel.swift */,
 				9521CDC5298E17B400827953 /* Assets.xcassets */,
 				9521CDC7298E17B400827953 /* LaunchScreen.storyboard */,
 				9521CDCA298E17B400827953 /* Info.plist */,
@@ -199,8 +210,11 @@
 		954A2D3C298E33F500D329B9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				95A99AC929938DF900CDA157 /* UIResponder+Extension.swift */,
 				954A2D3D298E341400D329B9 /* UIColor+Extension.swift */,
 				954A2D44298E5F1100D329B9 /* UIView+Extension.swift */,
+				95A99AC729937CD300CDA157 /* String+Extension.swift */,
+				95A99ACB2995E50300CDA157 /* Double+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -217,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				95A99AC12993464900CDA157 /* Tip.swift */,
+				95A99AC529936CC100CDA157 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -367,8 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A99AC629936CC100CDA157 /* Result.swift in Sources */,
 				9521CDC1298E17B100827953 /* CalculatorViewController.swift in Sources */,
+				95A99ACC2995E50300CDA157 /* Double+Extension.swift in Sources */,
+				95A99ACA29938DF900CDA157 /* UIResponder+Extension.swift in Sources */,
 				95A99AC22993464900CDA157 /* Tip.swift in Sources */,
+				95A99AC829937CD300CDA157 /* String+Extension.swift in Sources */,
 				954A2D2E298E249200D329B9 /* LogoView.swift in Sources */,
 				954A2D39298E33DF00D329B9 /* ThemeColor.swift in Sources */,
 				954A2D3E298E341400D329B9 /* UIColor+Extension.swift in Sources */,
@@ -379,6 +398,7 @@
 				954A2D45298E5F1200D329B9 /* UIView+Extension.swift in Sources */,
 				954A2D3B298E33F000D329B9 /* ThemeFont.swift in Sources */,
 				954A2D47298E76D500D329B9 /* HeaderView.swift in Sources */,
+				95A99AC429936ADF00CDA157 /* CalculatorViewModel.swift in Sources */,
 				9521CDBF298E17B100827953 /* SceneDelegate.swift in Sources */,
 				954A2D41298E3F3D00D329B9 /* LabelFactory.swift in Sources */,
 				954A2D36298E25C000D329B9 /* SplitInputView.swift in Sources */,
