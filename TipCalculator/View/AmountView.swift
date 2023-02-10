@@ -53,6 +53,16 @@ class AmountView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func configure(amount: Double) {
+        let text = NSMutableAttributedString(
+            string: "$" + amount.currencyFormatted,
+            attributes: [
+                .font: ThemeFont.bold(ofSize: 24),
+                .foregroundColor: ThemeColor.secondary])
+        text.addAttributes([.font: ThemeFont.demobold(ofSize: 16)], range: NSMakeRange(0, 1))
+        bottomLabel.attributedText = text
+    }
+    
     private func setupView() {
         addSubview(vStackView)
         vStackView.snp.makeConstraints { make in

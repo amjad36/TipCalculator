@@ -47,15 +47,23 @@ class ResultView: UIView {
         return stackView
     }()
     
+    private let totalBillView: AmountView = {
+        AmountView(
+            title: "Total bill",
+            textAlignment: .left)
+    }()
+    
+    private let totalTipView: AmountView = {
+        AmountView(
+            title: "Total tip",
+            textAlignment: .right)
+    }()
+    
     private lazy var hStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            AmountView(
-                title: "Total bill",
-                textAlignment: .left),
+            totalBillView,
             UIView(),
-            AmountView(
-                title: "Total tip",
-                textAlignment: .right)
+            totalTipView
         ])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
@@ -89,6 +97,18 @@ class ResultView: UIView {
             color: .black,
             opacity: 0.1,
             radius: 12.0)
+    }
+    
+    func configure(result: Result) {
+        let text = NSMutableAttributedString(
+            string: "$\(result.totalPerPerson)",
+            attributes: [.font: ThemeFont.demobold(ofSize: 48)])
+        text.addAttributes(
+            [.font: ThemeFont.demobold(ofSize: 24)],
+            range: NSMakeRange(0, 1))
+        amountPerPersonLable.attributedText = text
+        totalBillView.configure(amount: result.totalBill)
+        totalTipView.configure(amount: result.totalTip)
     }
     
     private func buildSpacerView(height: CGFloat) -> UIView {
