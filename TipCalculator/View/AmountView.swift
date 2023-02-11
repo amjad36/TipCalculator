@@ -22,7 +22,7 @@ class AmountView: UIView {
     private lazy var bottomLabel: UILabel = {
         let label = UILabel()
         let text = NSMutableAttributedString(
-            string: "$000",
+            string: "$0",
             attributes: [
                 .font: ThemeFont.bold(ofSize: 24),
                 .foregroundColor: ThemeColor.secondary])
@@ -55,7 +55,7 @@ class AmountView: UIView {
     
     func configure(amount: Double) {
         let text = NSMutableAttributedString(
-            string: "$" + amount.currencyFormatted,
+            string: amount.currencyFormatted,
             attributes: [
                 .font: ThemeFont.bold(ofSize: 24),
                 .foregroundColor: ThemeColor.secondary])

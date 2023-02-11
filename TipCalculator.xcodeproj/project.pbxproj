@@ -32,6 +32,8 @@
 		954A2D43298E4C8600D329B9 /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D42298E4C8500D329B9 /* AmountView.swift */; };
 		954A2D45298E5F1200D329B9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D44298E5F1100D329B9 /* UIView+Extension.swift */; };
 		954A2D47298E76D500D329B9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D46298E76D500D329B9 /* HeaderView.swift */; };
+		958645062997620400BD89F5 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 958645052997620400BD89F5 /* click.m4a */; };
+		95864509299763D900BD89F5 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95864508299763D900BD89F5 /* AudioPlayerService.swift */; };
 		95A99AC22993464900CDA157 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC12993464900CDA157 /* Tip.swift */; };
 		95A99AC429936ADF00CDA157 /* CalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC329936ADF00CDA157 /* CalculatorViewModel.swift */; };
 		95A99AC629936CC100CDA157 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A99AC529936CC100CDA157 /* Result.swift */; };
@@ -82,6 +84,8 @@
 		954A2D42298E4C8500D329B9 /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		954A2D44298E5F1100D329B9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		954A2D46298E76D500D329B9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		958645052997620400BD89F5 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		95864508299763D900BD89F5 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
 		95A99AC12993464900CDA157 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
 		95A99AC329936ADF00CDA157 /* CalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewModel.swift; sourceTree = "<group>"; };
 		95A99AC529936CC100CDA157 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		9521CDBB298E17B100827953 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				95864507299763A500BD89F5 /* Service */,
+				958645042997607B00BD89F5 /* Resource */,
 				954A2D3C298E33F500D329B9 /* Extension */,
 				954A2D3F298E3F2A00D329B9 /* Factory */,
 				95A99AC02993463700CDA157 /* Model */,
@@ -225,6 +231,22 @@
 				954A2D40298E3F3D00D329B9 /* LabelFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		958645042997607B00BD89F5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				958645052997620400BD89F5 /* click.m4a */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		95864507299763A500BD89F5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				95864508299763D900BD89F5 /* AudioPlayerService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		95A99AC02993463700CDA157 /* Model */ = {
@@ -356,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				958645062997620400BD89F5 /* click.m4a in Resources */,
 				9521CDC9298E17B400827953 /* LaunchScreen.storyboard in Resources */,
 				9521CDC6298E17B400827953 /* Assets.xcassets in Resources */,
 			);
@@ -383,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95A99AC629936CC100CDA157 /* Result.swift in Sources */,
+				95864509299763D900BD89F5 /* AudioPlayerService.swift in Sources */,
 				9521CDC1298E17B100827953 /* CalculatorViewController.swift in Sources */,
 				95A99ACC2995E50300CDA157 /* Double+Extension.swift in Sources */,
 				95A99ACA29938DF900CDA157 /* UIResponder+Extension.swift in Sources */,

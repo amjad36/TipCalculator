@@ -18,7 +18,7 @@ class ResultView: UIView {
     private let amountPerPersonLable: UILabel = {
         let label = UILabel()
         let text = NSMutableAttributedString(
-            string: "$000",
+            string: "$0",
             attributes: [.font: ThemeFont.demobold(ofSize: 48)])
         text.addAttributes(
             [.font: ThemeFont.demobold(ofSize: 24)],
@@ -101,7 +101,7 @@ class ResultView: UIView {
     
     func configure(result: Result) {
         let text = NSMutableAttributedString(
-            string: "$\(result.totalPerPerson)",
+            string: "\(result.totalPerPerson.currencyFormatted)",
             attributes: [.font: ThemeFont.demobold(ofSize: 48)])
         text.addAttributes(
             [.font: ThemeFont.demobold(ofSize: 24)],
