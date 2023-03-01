@@ -20,6 +20,7 @@
 		9521CDD4298E17B500827953 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CDD3298E17B500827953 /* TipCalculatorTests.swift */; };
 		9521CDDE298E17B500827953 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CDDD298E17B500827953 /* TipCalculatorUITests.swift */; };
 		9521CDE0298E17B500827953 /* TipCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9521CDDF298E17B500827953 /* TipCalculatorUITestsLaunchTests.swift */; };
+		9545A00929AB00CA0007D8B4 /* TipCalculatorSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9545A00829AB00C90007D8B4 /* TipCalculatorSnapshotTests.swift */; };
 		954A2D2E298E249200D329B9 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D2D298E249200D329B9 /* LogoView.swift */; };
 		954A2D30298E253C00D329B9 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D2F298E253C00D329B9 /* ResultView.swift */; };
 		954A2D32298E255200D329B9 /* BillInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954A2D31298E255200D329B9 /* BillInputView.swift */; };
@@ -72,6 +73,7 @@
 		9521CDD9298E17B500827953 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9521CDDD298E17B500827953 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		9521CDDF298E17B500827953 /* TipCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9545A00829AB00C90007D8B4 /* TipCalculatorSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorSnapshotTests.swift; sourceTree = "<group>"; };
 		954A2D2D298E249200D329B9 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		954A2D2F298E253C00D329B9 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		954A2D31298E255200D329B9 /* BillInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInputView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				9521CDD3298E17B500827953 /* TipCalculatorTests.swift */,
+				9545A00829AB00C90007D8B4 /* TipCalculatorSnapshotTests.swift */,
 			);
 			path = TipCalculatorTests;
 			sourceTree = "<group>";
@@ -434,6 +437,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9545A00929AB00CA0007D8B4 /* TipCalculatorSnapshotTests.swift in Sources */,
 				9521CDD4298E17B500827953 /* TipCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
